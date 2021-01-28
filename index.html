@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<title>Internet Organizations</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#welcomebtn").click(function(){
+		$("#welcome").fadeIn();
+        $("#IETF").fadeOut();
+		$("#ICANN").fadeOut();
+		$("#W3C").fadeOut();
+    });
+});
+
+$(document).ready(function(){
+    $("#ietfbtn").click(function(){
+		$("#welcome").fadeOut();
+        $("#IETF").fadeIn();
+		$("#ICANN").fadeOut();
+		$("#W3C").fadeOut();
+    });
+});
+
+$(document).ready(function(){
+    $("#icannbtn").click(function(){
+		$("#welcome").fadeOut();
+        $("#IETF").fadeOut();
+		$("#ICANN").fadeIn();
+		$("#W3C").fadeOut();
+    });
+});
+
+$(document).ready(function(){
+    $("#w3cbtn").click(function(){
+		$("#welcome").fadeOut();
+        $("#IETF").fadeOut();
+		$("#ICANN").fadeOut();
+		$("#W3C").fadeIn();
+    });
+});
+</script>
+</head>
+
+<body>
+
+<div class="col-12 headText bigHead">
+<img src="images/internetVSG.png" alt="Computer mouse on a globe">
+<span style="vertical-align: top;">Internet Organizations</span>
+</div>
+
+<div class="col-3 headText">
+<button id="welcomebtn">Welcome</button>
+<button id="ietfbtn">IETF</button>
+<button id="icannbtn">ICANN</button>
+<button id="w3cbtn">W3C</button>
+</div>
+
+<div class="col-9">
+<div class="container">
+
+<div id="welcome" class="indiv">
+<h1 class="headText" style="text-align: center;">
+Welcome to the page of Internet Organizations!
+</h1>
+<p class="genText">
+Click the buttons on the left to learn more about:
+</p>
+<ul class="genText">
+<li>The Internet Engineering Task Force</li>
+<li>The Internet Corporation for Assigned Names and Numbers</li>
+<li>The World Wide Web Consortium</li>
+</ul>
+<br><br>
+<p class="genText" style="font-style: italic; text-align: center;">
+Always remember to validate your Web Pages!<br>
+<a href="https://validator.w3.org/">https://validator.w3.org/</a>
+</p>
+</div>
+
+<div id="IETF" class="indiv">
+<h1 class="headText" style="text-align: center;">
+The Internet Engineering Task Force
+</h1>
+<p class="genText">
+The Internet Engineering Task Force is, as far as I can tell, an international organization made up largely of volunteers that are broken into
+subgroups and organizations that research and develop Internet infrastructure.
+</p>
+<p class="genText">
+The groups include:
+</p>
+<ul class="genText">
+<li>Internet Engineering Steering Group</li>
+<li>Internet Research Task Force</li>
+<li>IETF Trust</li>
+<li>Tools Team</li>
+<li>Internet Architecture Board</li>
+<li>IETF Administration and Operations Committee</li>
+<li>Nominations Committee</li>
+<li>Directorates</li>
+</ul>
+<p class="genText" style="font-style: italic; text-align: center;">
+You can find more details on the IETF website<br>
+<a href="https://www.ietf.org/">https://www.ietf.org/</a>
+</p>
+
+<h1 class="headText" style="text-align: center;">
+Better privacy through a new DNS protocol
+</h1>
+
+<p class="genText">
+One major initiative being researched by the IETF is a new protocol used to make it harder to track pages you have visited.
+</p>
+<p class="genText">
+Currently, it is very easy to Internet Service Providers and Search Engines to track and log the websites you visit by tracking your DNS history.
+While these organizations cannot see what you are doing on those sites, they can see what sites you visit.
+</p>
+<p class="genText">
+An organization called Cloudflare is attempting to become the first to release a service, called 1.1.1.1, that utilizes the new
+DNS standards being created by the IETF. While it is still in a testing phase, it does look promising.
+</p>
+<p class="genText" style="font-style: italic; text-align: center;">
+You can learn more about this initiative in this Wider article:<br>
+<a href="https://www.wired.com/story/new-encryption-service-adds-privacy-protection-for-web-browsing/">
+https://www.wired.com/story/new-encryption-service-adds-privacy-protection-for-web-browsing/
+</a>
+</p>
+
+</div>
+
+<div id="ICANN" class="indiv">
+<h1 class="headText" style="text-align: center;">
+The Internet Corporation for Assigned Names and Numbers
+</h1>
+<p class="genText">
+ICANN in simple terms, is an organization that manages Internet computer addressing.
+</p>
+<p class="genText">
+There are billions of devices connected to the Internet, and each must have its own address. Furthermore, each must be able to connect to
+and communicate with billions of other devices on the Internet. This is done through the Domain Name System (DNS).
+</p>
+<p class="genText">
+DNS is the system that links names (such as www.google.com, or my.tri-c.edu) to specific IP addresses. ICANN is the organization that
+assigns and manages those address. Just think of where the Internet would be if this wasn't possible!
+</p>
+<p class="genText" style="font-style: italic; text-align: center;">
+You can find more details on the ICANN website<br>
+<a href="https://www.icann.org/">https://www.icann.org/</a>
+</p>
+
+<h1 class="headText" style="text-align: center;">
+Need for privacy vs need for information...
+</h1>
+
+<p class="genText">
+It seems that ICANN has found itself in a bit of a tough situation. The EU has released new, stricter data protection regulations called GDPR.
+ICANN stores names, addresses, phone numbers, etc... of everybody who owns a WebSite domain. As it can probably be deduced, this creates a bit
+of a conundrum...
+</p>
+<p class="genText">
+It will be very interesting to see how these organizations agree to balance the need to protect people's data
+with the need to store certain information...
+</p>
+<p class="genText" style="font-style: italic; text-align: center;">
+You can learn more about this issue on MediaPost:<br>
+<a href="https://www.mediapost.com/publications/article/317882/eu-tells-icann-youre-unprepared-for-gdpr-regulat.html">
+https://www.mediapost.com/publications/article/317882/eu-tells-icann-youre-unprepared-for-gdpr-regulat.html
+</a>
+</p>
+</div>
+
+<div id="W3C" class="indiv" style="display:none;">
+<h1 class="headText" style="text-align: center;">
+World Wide Web Consortium
+</h1>
+<p class="genText">
+This is the organization that sets the standards for the World Wide Web.
+</p>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

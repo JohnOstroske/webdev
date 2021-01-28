@@ -1,0 +1,105 @@
+* {box-sizing: border-box;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]
+{
+    float: left;
+    padding: 15px;
+}
+
+.headText
+{
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.genText
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: Honeydew;
+	
+}
+
+.bigHead
+{
+	font-size: 48px;
+	font-style: italic;
+	color: SpringGreen;
+	background-color: SlateGrey;
+	border: solid Honeydew 4px;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: DarkSlateGrey;
+	
+}
+
+.indiv
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.container
+{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+
+body
+{
+	background: linear-gradient(to right, DarkSlateGrey, DarkGreen);
+}
+
+button
+{
+	background: linear-gradient(to bottom right, DarkSlateGrey, SlateGrey);
+	font-size: 36px;
+	padding: 16px 32px;
+	border-radius: 8px;
+	color: Honeydew;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: DarkGreen;
+	transition-duration: 0.2s;
+	border: 4px solid Honeydew;
+	margin: 4px;
+	width: 100%;
+}
+
+button:hover
+{
+	background: linear-gradient(to bottom right, DarkSlateBlue, SlateBlue);
+	border: 4px solid PaleTurquoise;
+	font-style: italic;
+}
+
+button:active
+{
+	background: linear-gradient(to bottom right, DarkKhaki, Khaki);
+	border: 4px solid LemonChiffon;
+	font-style: italic;
+}
+
+h1
+{
+	color: Honeydew;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: DarkSlateGrey;
+}
+
+#ICANN, #IETF, #W3C
+{
+	display:none;
+}
